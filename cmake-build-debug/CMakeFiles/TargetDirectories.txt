@@ -1,0 +1,3 @@
+/home/camanem/CLionProjects/ExtraClase1-DatosII/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/camanem/CLionProjects/ExtraClase1-DatosII/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/camanem/CLionProjects/ExtraClase1-DatosII/cmake-build-debug/CMakeFiles/ExtraClase1.dir
