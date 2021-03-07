@@ -1,10 +1,15 @@
 #include <iostream>
-#include "Node.cpp"
+#include "LinkedList.h"
 
 using namespace std;
 
 int main() {
-    Node myNode = Node(10, nullptr);
-    cout << "Hello, World!";
+
+    LinkedList* linkedList = new LinkedList();
+    linkedList->newNode(10);
+    linkedList->newNode(20);
+    linkedList->printList();
+    
+    cout << "Hello, World!" << endl;
     return 0;
 }

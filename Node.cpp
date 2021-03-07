@@ -1,40 +1,31 @@
-
 //
-// Created by camanem on 5/3/21.
+// Created by camanem on 7/3/21.
 //
 
-using namespace std;
+#include "Node.h"
+
+Node::Node(int _value){
+
+    value = _value;
+    next = nullptr;
+}
 
 
-class Node{
-
-private:
-    int value;
-    int *next;
-
-public:
-    Node(int _value, int *_next){
-
-        value = _value;
-        next = _next;
-    }
-
-    int getValue() const {
-        return value;
-    }
-
-    void setValue(int value) {
-        Node::value = value;
-    }
-
-    int *getNext() const {
-        return next;
-    }
-
-    void setNext(int *next) {
-        Node::next = next;
-    }
+int Node::getValue() const {
+    return value;
+}
 
 
-};
+void Node::setValue(int value) {
+    value = value;
+}
 
+
+Node* Node::getNext() const {
+    return next;
+}
+
+
+void Node::setNext(Node* _next) {
+    next = _next;
+}

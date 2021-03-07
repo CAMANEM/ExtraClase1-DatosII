@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/ExtraClase1.dir/main.cpp.o CMakeFiles/ExtraClase1.dir/Node.cpp.o CMakeFiles/ExtraClase1.dir/LIst.cpp.o  -o ExtraClase1 
