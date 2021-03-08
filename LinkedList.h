@@ -11,13 +11,14 @@ class LinkedList {
 private:
 
     Node* head;
+    int listSize;
 
 public:
 
     LinkedList();
     void newNode(int value);
+    void deleteNode(int position);
     void printList();
-    void getA();
 
 };
 

@@ -6,6 +6,8 @@
 #define EXTRACLASE_I_NODE_H
 
 
+#include <cstddef>
+
 class Node {
 
 
@@ -17,6 +19,8 @@ private:
 public:
 
     Node(int);
+    void * operator new(size_t);
+    void operator delete(void *node);
     int getValue() const;
     void setValue(int);
     Node *getNext() const;
