@@ -13,9 +13,8 @@ int main() {
         cout << "------------------------------------------------------" << endl;
         cout << " --> Enter 1 to add a node to the linked list" << endl;
         cout << " --> Enter 2 to Delete a Node from the linked list" << endl;
-        cout << " --> Enter 3 to print the references of the linked list" << endl;
-        cout << " --> Enter 4 to print the values of the linked list and the collector" << endl;
-        cout << " --> Enter 5 to exit" << endl;
+        cout << " --> Enter 3 to print the references, values of the linked list and the collector" << endl;
+        cout << " --> Enter 4 to exit" << endl;
         cout << "------------------------------------------------------" << endl;
         cin>> userInput;
 
@@ -36,16 +35,15 @@ int main() {
 
             case 3:
                 linkedList->printReferences();
+                linkedList->printList();
                 break;
 
             case 4:
-                linkedList->printList();
-
-            case 5:
                 flag = false;
                 break;
 
             default:
+                cout << "Invalid command";
                 break;
         }
 

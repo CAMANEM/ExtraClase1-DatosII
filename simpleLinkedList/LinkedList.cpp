@@ -97,7 +97,6 @@ void LinkedList::printList() {
         cout << "listSize: " << listSize << endl;
         cout << "Collector: ";
         actualNode->printCollector();
-        cout << "-------------" << endl;
     }
 
     else {
