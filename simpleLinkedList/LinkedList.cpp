@@ -3,6 +3,7 @@
 //
 #include "iostream"
 #include "LinkedList.h"
+#include "Node.h"
 
 using namespace std;
 
@@ -10,6 +11,7 @@ LinkedList::LinkedList() {
 
     head = nullptr;
     listSize = 0;
+
 }
 
 void LinkedList::newNode(int value){
@@ -25,17 +27,18 @@ void LinkedList::newNode(int value){
 
 void LinkedList::deleteNode(int position){
 
-    if (listSize < position || position < 0){
+    Node* previusNode = head;
+    Node* actualnode = head;
 
-        cout << "The position exceeds list size or its less than 0";
+    if (listSize-1 < position || position < 0){
+
+        cout << endl << "The position exceeds list size or its less than 0" << endl;
     }
 
     else if(position != 0){
 
         listSize -= 1;
 
-        Node* previusNode = head;
-        Node* actualnode = head;
         actualnode = actualnode->getNext();
         int index = 1;
 
@@ -47,24 +50,28 @@ void LinkedList::deleteNode(int position){
             index++;
         }
 
-        delete(actualnode);
 
 
         //Si el nodo a eliminar está al final
         if (actualnode->getNext() == nullptr){
 
             previusNode->setNext(nullptr);
+            delete(actualnode);
+
         }
         else{
             previusNode->setNext(actualnode->getNext());
+            delete(actualnode);
+
         }
         //cout << actualnode;
 
     }
+    // Cuando el nodo a eliminar es el primero en la lista
     else{
-
-        delete(head);
-        head = head->getNext();
+        actualnode = actualnode->getNext();
+        head = actualnode;
+        delete(previusNode);
 
         listSize -= 1;
     }
@@ -73,6 +80,7 @@ void LinkedList::deleteNode(int position){
 
 void LinkedList::printList() {
 
+    cout <<"values: ";
     if (head != nullptr) {
 
         Node *actualNode = head;
@@ -85,8 +93,11 @@ void LinkedList::printList() {
 
             //cout << "sigue" << endl;
         }
-        cout << endl << "terminó" << endl;
+        cout << " -> nullptr" << endl;
         cout << "listSize: " << listSize << endl;
+        cout << "Collector: ";
+        actualNode->printCollector();
+        cout << "-------------" << endl;
     }
 
     else {
@@ -94,3 +105,28 @@ void LinkedList::printList() {
         cout << head << endl;
     }
 }
+
+void LinkedList::printReferences() {
+
+    cout <<"references: ";
+    if (head != nullptr) {
+
+        Node *actualNode = head;
+        cout << actualNode;
+
+        while (actualNode->getNext() != nullptr){
+
+            actualNode = actualNode->getNext();
+            cout << " -> " << actualNode;
+
+            //cout << "sigue" << endl;
+        }
+        cout << " -> nullptr" << endl;
+    }
+
+    else {
+        cout << "The linked list is empty";
+        cout << head << endl;
+    }
+}
+

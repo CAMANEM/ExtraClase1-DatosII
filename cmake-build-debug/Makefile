@@ -143,59 +143,32 @@ ExtraClase_I/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/build
 .PHONY : ExtraClase_I/fast
 
-LinkedList.o: LinkedList.cpp.o
+CollectorPackage/Collector.o: CollectorPackage/Collector.cpp.o
 
-.PHONY : LinkedList.o
-
-# target to build an object file
-LinkedList.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/LinkedList.cpp.o
-.PHONY : LinkedList.cpp.o
-
-LinkedList.i: LinkedList.cpp.i
-
-.PHONY : LinkedList.i
-
-# target to preprocess a source file
-LinkedList.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/LinkedList.cpp.i
-.PHONY : LinkedList.cpp.i
-
-LinkedList.s: LinkedList.cpp.s
-
-.PHONY : LinkedList.s
-
-# target to generate assembly for a file
-LinkedList.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/LinkedList.cpp.s
-.PHONY : LinkedList.cpp.s
-
-Node.o: Node.cpp.o
-
-.PHONY : Node.o
+.PHONY : CollectorPackage/Collector.o
 
 # target to build an object file
-Node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/Node.cpp.o
-.PHONY : Node.cpp.o
+CollectorPackage/Collector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/CollectorPackage/Collector.cpp.o
+.PHONY : CollectorPackage/Collector.cpp.o
 
-Node.i: Node.cpp.i
+CollectorPackage/Collector.i: CollectorPackage/Collector.cpp.i
 
-.PHONY : Node.i
+.PHONY : CollectorPackage/Collector.i
 
 # target to preprocess a source file
-Node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/Node.cpp.i
-.PHONY : Node.cpp.i
+CollectorPackage/Collector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/CollectorPackage/Collector.cpp.i
+.PHONY : CollectorPackage/Collector.cpp.i
 
-Node.s: Node.cpp.s
+CollectorPackage/Collector.s: CollectorPackage/Collector.cpp.s
 
-.PHONY : Node.s
+.PHONY : CollectorPackage/Collector.s
 
 # target to generate assembly for a file
-Node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/Node.cpp.s
-.PHONY : Node.cpp.s
+CollectorPackage/Collector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/CollectorPackage/Collector.cpp.s
+.PHONY : CollectorPackage/Collector.cpp.s
 
 main.o: main.cpp.o
 
@@ -224,6 +197,60 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+simpleLinkedList/LinkedList.o: simpleLinkedList/LinkedList.cpp.o
+
+.PHONY : simpleLinkedList/LinkedList.o
+
+# target to build an object file
+simpleLinkedList/LinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/simpleLinkedList/LinkedList.cpp.o
+.PHONY : simpleLinkedList/LinkedList.cpp.o
+
+simpleLinkedList/LinkedList.i: simpleLinkedList/LinkedList.cpp.i
+
+.PHONY : simpleLinkedList/LinkedList.i
+
+# target to preprocess a source file
+simpleLinkedList/LinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/simpleLinkedList/LinkedList.cpp.i
+.PHONY : simpleLinkedList/LinkedList.cpp.i
+
+simpleLinkedList/LinkedList.s: simpleLinkedList/LinkedList.cpp.s
+
+.PHONY : simpleLinkedList/LinkedList.s
+
+# target to generate assembly for a file
+simpleLinkedList/LinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/simpleLinkedList/LinkedList.cpp.s
+.PHONY : simpleLinkedList/LinkedList.cpp.s
+
+simpleLinkedList/Node.o: simpleLinkedList/Node.cpp.o
+
+.PHONY : simpleLinkedList/Node.o
+
+# target to build an object file
+simpleLinkedList/Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/simpleLinkedList/Node.cpp.o
+.PHONY : simpleLinkedList/Node.cpp.o
+
+simpleLinkedList/Node.i: simpleLinkedList/Node.cpp.i
+
+.PHONY : simpleLinkedList/Node.i
+
+# target to preprocess a source file
+simpleLinkedList/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/simpleLinkedList/Node.cpp.i
+.PHONY : simpleLinkedList/Node.cpp.i
+
+simpleLinkedList/Node.s: simpleLinkedList/Node.cpp.s
+
+.PHONY : simpleLinkedList/Node.s
+
+# target to generate assembly for a file
+simpleLinkedList/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExtraClase_I.dir/build.make CMakeFiles/ExtraClase_I.dir/simpleLinkedList/Node.cpp.s
+.PHONY : simpleLinkedList/Node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -233,15 +260,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ExtraClase_I"
-	@echo "... LinkedList.o"
-	@echo "... LinkedList.i"
-	@echo "... LinkedList.s"
-	@echo "... Node.o"
-	@echo "... Node.i"
-	@echo "... Node.s"
+	@echo "... CollectorPackage/Collector.o"
+	@echo "... CollectorPackage/Collector.i"
+	@echo "... CollectorPackage/Collector.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... simpleLinkedList/LinkedList.o"
+	@echo "... simpleLinkedList/LinkedList.i"
+	@echo "... simpleLinkedList/LinkedList.s"
+	@echo "... simpleLinkedList/Node.o"
+	@echo "... simpleLinkedList/Node.i"
+	@echo "... simpleLinkedList/Node.s"
 .PHONY : help
 
 

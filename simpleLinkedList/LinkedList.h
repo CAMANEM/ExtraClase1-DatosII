@@ -19,6 +19,7 @@ public:
     void newNode(int value);
     void deleteNode(int position);
     void printList();
+    void printReferences();
 
 };
 

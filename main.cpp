@@ -1,5 +1,5 @@
 #include <iostream>
-#include "LinkedList.h"
+#include "simpleLinkedList/LinkedList.h"
 
 using namespace std;
 
@@ -10,10 +10,18 @@ int main() {
     linkedList->newNode(20);
     linkedList->newNode(30);
     linkedList->newNode(40);
+    linkedList->printReferences();
     linkedList->printList();
-    linkedList->deleteNode(3);
+    linkedList->deleteNode(2);
+    linkedList->deleteNode(0);
+    linkedList->printReferences();
     linkedList->printList();
-    
-    cout << "Hello, World!" << endl;
+
+    linkedList->newNode(25);
+    //linkedList->newNode(123123);
+    linkedList->printReferences();
+    linkedList->printList();
+
+
     return 0;
 }

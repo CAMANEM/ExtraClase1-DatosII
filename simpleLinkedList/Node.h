@@ -2,8 +2,8 @@
 // Created by camanem on 7/3/21.
 //
 
-#ifndef EXTRACLASE_I_NODE_H
-#define EXTRACLASE_I_NODE_H
+#ifndef EXTRACLASE_I_COLLECTORNODE_H
+#define EXTRACLASE_I_COLLECTORNODE_H
 
 
 #include <cstddef>
@@ -25,7 +25,8 @@ public:
     void setValue(int);
     Node *getNext() const;
     void setNext(Node*);
+    void printCollector();
 };
 
 
-#endif //EXTRACLASE_I_NODE_H
+#endif //EXTRACLASE_I_COLLECTORNODE_H
